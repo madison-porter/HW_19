@@ -51,73 +51,16 @@ $(".button").on({mouseenter: function (){
 
 });
 
-$(".projectTitleRight").on({mouseenter: function (){
-    $(".projectTitleRight").css({
-        "font-size":"32px"
+$("button").on({mouseenter: function (){
+    $("button").css({
+        "font-weight":"bold"
     });
 },
     mouseleave: function () {
-        $ (".projectTitleRight").css ({
-            "font-size":"24px"
+        $ ("button").css ({
+            "font-weight":"normal"
         });
     }
 
 });
 
-$(".projectTitleLeft").on({mouseenter: function (){
-    $(".projectTitleLeft").css({
-        "font-size":"32px"
-    });
-},
-    mouseleave: function () {
-        $ (".projectTitleLeft").css ({
-            "font-size":"24px"
-        });
-    }
-
-});
-
-$("#headerIcon").on({mouseenter: function (){
-    $("#headerIcon").css({
-        "height":"55px",
-        "width":"55px"
-    });
-},
-    mouseleave: function () {
-        $ ("#headerIcon").css ({
-            "height":"45px",
-            "width":"45px"
-        });
-    }
-
-});
-
-$("#footerIcon").on({mouseenter: function (){
-    $("#footerIcon").css({
-        "height":"55px",
-        "width":"55px"
-    });
-},
-    mouseleave: function () {
-        $ ("#footerIcon").css ({
-            "height":"45px",
-            "width":"45px"
-        });
-    }
-
-});
-
-$("#emailIcon").on({mouseenter: function (){
-    $("#emailIcon").css({
-        "height":"55px",
-        "width":"55px"
-    });
-},
-    mouseleave: function () {
-        $ ("#emailIcon").css ({
-            "height":"45px",
-            "width":"45px"
-        });
-    }
-
-});
