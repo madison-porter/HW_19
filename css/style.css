@@ -16,26 +16,16 @@ header {
     padding: 16px 32px;
 }
 
-.icon {
-    height: 45px;
-    width: 45px;
-    cursor: pointer;
-}
-
-.link {
-    width: 25%;
-}
-
 #header {
     font-family: Source Serif Pro;
-    font-size: 24px;
+    font-size: 32px;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav {
-    width: 25%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
 }
@@ -58,6 +48,10 @@ a{
 }
 
 .menu {
+    display: none;
+}
+
+#MP {
     display: none;
 }
 
@@ -85,21 +79,15 @@ h1{
     font-family: Montserrat;
     font-size: 24px;
     line-height: 30px;
-    width: 60%;
-    padding: 16px;
-    padding-left: 10%;
+    width: 80%;
+    padding-left: 32px;
 }
 
 .button {
     display: inline-block;
-    font-family: Montserrat;
-    font-size: 20px;
     text-align: center;
     padding: 16px;
-    margin: 16px;
-    background-color: #474747;
-    color: #F9F7F4;
-    padding-left: 47.5%;
+    padding-right: 20%;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -107,11 +95,6 @@ h1{
 
 .arrow {
     margin-left: 8px;
-}
-
-.headshot {
-    height: auto;
-    width: 400px;
 }
 
 /* Projects */
@@ -130,10 +113,10 @@ h1{
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 48px;
-    margin-top: -96px;
+    margin-top: 48px;
 }
 
-.projectTitleRight {
+.projectTitle {
     padding: 8px;
     text-align: left;
     font-size: 24px;
@@ -147,13 +130,6 @@ h1{
     margin-bottom: 48px;
 } 
 
-.projectTitleLeft {
-    padding: 8px;
-    text-align: right;
-    font-size: 24px;
-    background-color: #F9F7F4;
-    color: #474747;
-}
 
 /* Footer */
 footer {
@@ -167,7 +143,7 @@ footer {
 
 h5 {
     font-family: Source Serif Pro;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 h6 {
@@ -190,6 +166,12 @@ h6 {
     justify-content: flex-end;
 }
 
+.icon {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
 /* About Page */
 .aboutMe {
     background-color: #F9F7F4;
@@ -197,25 +179,28 @@ h6 {
     color: #474747;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-    padding-bottom: 56px;
+    padding-bottom: 48px;
+    padding-top: 48px;
 }
 
 .aboutMe p { 
     font-family: Montserrat;
     font-size: 24px;
     width: 60%;
-    padding: 16px;
-    padding-left: 10%;
+    padding-left: 32px;
 }
 
-#hello {
-    padding-top: 48px;
+.headshot {
+    height: auto;
+    width: 320px;
+    margin-right: 32px;
+    margin-bottom: 24px;
 }
 
 .CTA {
     display: flex;
     justify-content: center;
+    font-size: 36px;
     color: #474747;
     margin-bottom: 16px;
 }
@@ -254,7 +239,8 @@ button {
 h3 {
     color: #474747;
     font-family: Source Serif Pro;
-    font-size: 24px;
+    font-size: 36px;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -262,7 +248,7 @@ h3 {
     padding: 8px;
     text-align: justify;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     background-color: #F9F7F4;
     color: #474747;
@@ -289,9 +275,17 @@ h3 {
     .menu {
         display: flex;
         justify-content: flex-end;
-        width: 25%;
+        width: 50%;
     }
 
+    h1 {
+        padding-right: 32px;
+    }
+
+    .aboutMe p {
+        width: 80%;
+        padding-right: 32px;
+    }
     .ideate, .evaluate {
         display: flex;
         flex-direction: column;
@@ -310,6 +304,16 @@ h3 {
 
 /* Media Query Max-Width 600px */
 @media only screen and (max-width: 600px) {
+    #MP {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #header {
+        display: none;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -323,16 +327,11 @@ h3 {
         line-height: 30px;
     }
 
-    .projectRight {
+    .projectRight, .projectLeft {
         align-items: center;
-        margin-top: -32px;
     }
 
-    .projectLeft {
-        align-items: center;
-    } 
-
-    .projectTitleLeft, .projectTitleRight {
+    .projectTitle {
         text-align: center;
     }
 

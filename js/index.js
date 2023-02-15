@@ -38,6 +38,19 @@ $("#resume").on({mouseenter: function (){
 
 });
 
+$("#linkedin").on({mouseenter: function (){
+    $("#linkedin").css({
+        "font-weight":"bold"
+    });
+},
+    mouseleave: function () {
+        $ ("#linkedin").css ({
+            "font-weight":"normal"
+        });
+    }
+
+});
+
 $(".button").on({mouseenter: function (){
     $(".button").css({
         "font-weight":"bold"
